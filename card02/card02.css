@@ -1,0 +1,82 @@
+/* Este es el contenedor */
+.pequenas {
+    display: flex;
+    border: 2px solid rgb(229, 247, 237);
+    border-radius: 5px;
+    opacity: 0.8;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    /* space-around ++++++ separa  y deja espacio entre los box*/
+    align-items: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+    /* wrap permite que bajen las cajas para responsive */
+    margin: 10px auto;
+}
+.box {
+    border-radius: 5px;
+    width: 150px;
+    height: 250px;
+    background: linear-gradient(to top left,#caeed9,rgb(109, 84, 12));
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.icon_box {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 4px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.icon_box img{
+    width: 130px;
+    height: 90px;
+    border-radius: 2%;
+}
+
+.icon_box:hover {
+    cursor: pointer;
+}
+
+.icon_box:hover i {
+    transform: rotate(10deg);
+} 
+
+.text_box {
+
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    color: rgb(5, 5, 5);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.box a#pata {
+    width: 140px;
+    height: 40px;
+    background: green;
+    color: white;
+    font-size: 14px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    margin: 0px auto;
+    border-radius: 10px 10px 0px 0px;
+    /* border: 1px solid rgb(236, 154, 60); */
+    transform: translateY(60px);
+    transition: 0.5s;
+    opacity: 0.3;
+    
+    
+}
+.box:hover a#pata {
+    transform: translateY(0px);
+}
